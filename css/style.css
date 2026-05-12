@@ -1,4 +1,5 @@
 
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,14 +14,54 @@ body {
     justify-content: center;
 }
 
+/* General Styling */
 .container {
 
 }
 
 .scene {
-
+    height: 300px;
+    width: 200px;
+    border: 1px solid #CCC;
 }
 
 .card {
-    
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .card-face {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    & .card-face-front {
+        background-color: red;
+    }
+
+    & .card-face-back {
+        background-color: cyan;
+    }
+}
+
+/* Utility Classes */
+.montserrat-large {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.open-sans-medium {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    font-style: normal;
 }
