@@ -36,6 +36,7 @@ body {
     align-items: center;
     justify-content: center;
 
+    transform-origin: 100% 50% 0px;
     transition: transform 1s;
     transform-style: preserve-3d;
 
@@ -67,7 +68,7 @@ body {
 
 /* Flipping class to Toggle */
 .isFlipped {
-    transform: rotateY(180deg);
+    transform: translateX(-100%) rotateY(-180deg);
 }
 
 /* Utility Classes */
